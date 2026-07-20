@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Vibe</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="main-app">
+    <nav class="glass-nav">
+      <h2>Vibe</h2>
+      <div class="nav-links">
+        <a href="index.html">Feed</a>
+        <a href="#" class="active" id="nav-profile-self">Profile</a>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </nav>
+    <main>
+      <section class="profile-header glass-panel">
+        <div class="avatar-placeholder"></div>
+        <div class="profile-info">
+          <h1 id="profile-username">Loading...</h1>
+          <div class="stats">
+            <span id="followers-count">0 Followers</span>
+            <span id="following-count">0 Following</span>
+          </div>
+          <button id="follow-btn" class="hidden">Follow</button>
+        </div>
+      </section>
+      <section id="profile-posts">
+        <!-- User posts will be injected here -->
+      </section>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
